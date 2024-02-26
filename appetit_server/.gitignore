@@ -1,0 +1,40 @@
+# Dependency directories
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Compiled files
+dist/
+build/
+*.bundle.js
+*.bundle.js.map
+*.bundle.d.ts
+*.bundle.min.js
+*.bundle.min.js.map
+*.css
+*.d.ts
+*.js
+*.js.map
+
+# Environment files
+.env
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Logs and testing files
+*.log
+*.spec.ts
+*.test.ts
+coverage/
+
+# OS and IDE generated files
+.DS_Store
+Thumbs.db
