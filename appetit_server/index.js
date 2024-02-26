@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/", (req, res) => {
-  console.log("Root page is working");
+  console.log("Home page is working");
   res.status(234).send("Welcome to homepage");
 });
 
