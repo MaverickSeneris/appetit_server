@@ -58,28 +58,53 @@ app.get("/recipes/:id", async (req, res) => {
 });
 
 // const seedData = [
+//   // {
+//   //   name: "Adobo",
+//   //   description:
+//   //     "Filipino dish with marinated meat cooked in vinegar, soy sauce, garlic, and spices for a tangy, savory flavor.",
+//   //   ingredients: [
+//   //     "2 cloves Garlic",
+//   //     "1 tbsp Vinegar",
+//   //     "1 tbsp Soy sauce",
+//   //     "1 kl Pork/Chicken",
+//   //     "2 Bayleaves",
+//   //   ],
+//   //   instructions: [
+//   //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint Sed quibusdam recusandae alias error harum maxime adipisci amet laborum.",
+//   //   ],
+//   //   image:
+//   //     "https://images.unsplash.com/photo-1606525575548-2d62ed40291d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWRvYm98ZW58MHx8MHx8fDA%3D",
+//   //   serves: 2,
+//   //   cookingTime: {
+//   //     duration: 45,
+//   //     unit: ["min"]
+//   //   },
+//   //   typeOfDish:["Pork", "Poultry"]
+//   // },
 //   {
-//     name: "Adobo",
+//     name: "Kare-kare",
 //     description:
-//       "Filipino dish with marinated meat cooked in vinegar, soy sauce, garlic, and spices for a tangy, savory flavor.",
+//       "Filipino dish with stewed beef in sweet and salty peanut butter and juicy vegetables.",
 //     ingredients: [
-//       "2 cloves Garlic",
-//       "1 tbsp Vinegar",
-//       "1 tbsp Soy sauce",
-//       "1 kl Pork/Chicken",
-//       "2 Bayleaves",
+//       "Beef",
+//       "Peanut butter",
+//       "Pechay",
+//       "Eggplant",
+//       "Garlic",
+//       "Onion",
+//       "String beans"
 //     ],
 //     instructions: [
 //       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentiumoptio, eaque rerum Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint Sed quibusdam recusandae alias error harum maxime adipisci amet laborum.",
 //     ],
 //     image:
-//       "https://images.unsplash.com/photo-1606525575548-2d62ed40291d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWRvYm98ZW58MHx8MHx8fDA%3D",
+//       "https://images.aws.nestle.recipes/resized/421c137cc8f723656b1c9a08ec3fbf29_nks_b05_s2-d041544_1500_700.jpg",
 //     serves: 2,
 //     cookingTime: {
-//       duration: 45,
-//       unit: ["min"]
+//       duration: 1,
+//       unit: ["hr"]
 //     },
-//     typeOfDish:["Pork", "Poultry"]
+//     typeOfDish:["Beef"]
 //   },
 // ];
 
