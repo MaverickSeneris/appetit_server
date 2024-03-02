@@ -77,9 +77,9 @@ app.get("/recipes/:id", async (req, res) => {
 //     serves: 2,
 //     cookingTime: {
 //       duration: 45,
-//       unit: ["minute"]
+//       unit: ["min"]
 //     },
-//     typeOfDish:["pork", "chicken"]
+//     typeOfDish:["Pork", "Poultry"]
 //   },
 // ];
 
