@@ -15,24 +15,24 @@ app.get("/", (req, res) => {
 });
 
 // Create new Recipe
-app.post("/recipes", async (req, res) => {
-  try {
-    if (!req.body.recipe || !req.body.author) {
-      return response.status(400).send({
-        message: "Send all required fields: recipe, author",
-      });
-    }
-    const newRecipe = {
-      recipe: req.body.recipe,
-      author: req.body.author,
-    };
-    const recipe = await Recipe.create(newRecipe);
-    return res.status(201).send(recipe);
-  } catch (err) {
-    console.log(err.message);
-    res.status(500).send({ message: err.message });
-  }
-});
+// app.post("recipes/create", async (req, res) => {
+//   try {
+//     if (!req.body.recipe || !req.body.author) {
+//       return response.status(400).send({
+//         message: "Send all required fields: recipe, author",
+//       });
+//     }
+//     const newRecipe = {
+//       recipe: req.body.recipe,
+//       author: req.body.author,
+//     };
+//     const recipe = await Recipe.create(newRecipe);
+//     return res.status(201).send(recipe);
+//   } catch (err) {
+//     console.log(err.message);
+//     res.status(500).send({ message: err.message });
+//   }
+// });
 
 //Display All Recipes
 app.get("/recipes", async (req, res) => {
@@ -54,6 +54,45 @@ app.get("/recipes/:id", async (req, res) => {
   } catch (err) {
     console.log(err.message);
     res.status(500).send({ message: err.message });
+  }
+});
+
+app.post("/create", async (req, res) => {
+  try {
+    const {
+      name,
+      description,
+      ingredients,
+      instructions,
+      image,
+      serves,
+      cookingHr,
+      cookingMin,
+      typeOfDish,
+    } = req.body;
+
+    // Create a new recipe object using the Recipe model
+    const newRecipe = new Recipe({
+      name,
+      description,
+      ingredients,
+      instructions,
+      image,
+      serves,
+      cookingHr,
+      cookingMin,
+      typeOfDish,
+    });
+
+    // Save the new recipe to the database
+    await newRecipe.save();
+
+    // Respond with the newly created recipe
+    res.status(201).json(newRecipe);
+  } catch (error) {
+    // Handle any unexpected errors
+    console.error("Error creating recipe:", error);
+    res.status(500).json({ error: "Internal server error" });
   }
 });
 
@@ -107,7 +146,6 @@ app.get("/recipes/:id", async (req, res) => {
 //     typeOfDish:["Beef"]
 //   },
 // ];
-
 
 // Recipe.insertMany(seedData)
 //   .then((result) => {
